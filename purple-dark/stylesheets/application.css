@@ -1,0 +1,954 @@
+/* Redmine Purple Dark Theme
+ * 紫を基調としたダークテーマ - 目に優しい紫系の配色
+ */
+
+@import url(/application.css);
+
+:root {
+  --oc-red-9: #d63939;
+}
+
+/* ===== 基本背景とテキスト ===== */
+html, body {
+  background-color: #1a1625 !important;
+  color: #e0e0e0 !important;
+}
+
+#wrapper {
+  background: #1a1625 !important;
+}
+
+#main {
+  background: #1a1625 !important;
+  color: #e0e0e0 !important;
+}
+
+#content {
+  background-color: #2d1b3d !important;
+  color: #e0e0e0 !important;
+}
+
+/* ===== ヘッダーとメニュー ===== */
+#top-menu {
+  background: #2d1b3d !important;
+  color: #e0e0e0 !important;
+  border-bottom: 1px solid #4a2d5a !important;
+}
+
+#top-menu a {
+  color: #e0e0e0 !important;
+}
+
+#top-menu #loggedas {
+  color: #e0e0e0 !important;
+}
+
+#header {
+  background: linear-gradient(180deg, #4a2d5a 30%, #3d2a4d) !important;
+  color: #f3e8ff !important;
+}
+
+#header a {
+  color: #f3e8ff !important;
+}
+
+#header h1 {
+  color: #f3e8ff !important;
+}
+
+#quick-search #q {
+  background-color: #1a1625 !important;
+  color: #e0e0e0 !important;
+  border: 1px solid #6b3d7a !important;
+}
+
+#main-menu {
+  background-color: #5a3d6a !important;
+}
+
+#main-menu li a {
+  color: #e0e0e0 !important;
+  background-color: transparent !important;
+}
+
+#main-menu li a:hover {
+  background: #5a3d6a !important;
+  color: #f3e8ff !important;
+}
+
+#main-menu li a.selected,
+#main-menu li a.selected:hover {
+  background: #3d2a4d !important;
+  color: #f3e8ff !important;
+}
+
+#main-menu li a.new-object {
+  background-color: #5a3d6a !important;
+}
+
+#main-menu .menu-children {
+  background-color: #2d1b3d !important;
+  border-color: #6b3d7a !important;
+}
+
+#main-menu .menu-children li a {
+  color: #e0e0e0 !important;
+  background-color: #2d1b3d !important;
+}
+
+#main-menu .menu-children li a:hover {
+  background-color: #4a2d5a !important;
+  color: #f3e8ff !important;
+}
+
+/* ===== サイドバー ===== */
+#sidebar {
+  background: #251b2d !important;
+  border-left: 1px solid #4a2d5a !important;
+  color: #e0e0e0 !important;
+}
+
+#sidebar h3 {
+  color: #f3e8ff !important;
+}
+
+#sidebar hr {
+  background: #4a2d5a !important;
+}
+
+#sidebar a.selected {
+  background-color: #5a3d6a !important;
+  color: #f3e8ff !important;
+}
+
+#sidebar a {
+  color: #c4b5fd !important;
+}
+
+#sidebar a:hover {
+  color: #f3e8ff !important;
+}
+
+#sidebar-switch-button svg {
+  stroke: #f3e8ff !important;
+}
+
+#sidebar-switch-button:hover {
+  background-color: #4a2d5a !important;
+}
+
+/* ===== フッター ===== */
+#footer {
+  background: #1a1625 !important;
+  border-top: 1px solid #4a2d5a !important;
+  color: #a78bfa !important;
+}
+
+#footer a {
+  color: #c4b5fd !important;
+}
+
+/* ===== リンク ===== */
+a, a:link, a:visited {
+  color: #a78bfa !important;
+}
+
+a:hover, a:active {
+  color: #c4b5fd !important;
+  text-decoration: underline !important;
+}
+
+a.issue.closed, a.issue.closed:link, a.issue.closed:visited {
+  color: #888 !important;
+}
+
+a.project.closed, a.project.closed:link, a.project.closed:visited {
+  color: #888 !important;
+}
+
+a.user.locked, a.user.locked:link, a.user.locked:visited {
+  color: #888 !important;
+}
+
+a.user.user-mention {
+  background-color: #4a2d5a !important;
+  color: #f3e8ff !important;
+}
+
+/* ===== 見出し ===== */
+h1, h2, h3, h4, h5, h6 {
+  color: #f3e8ff !important;
+}
+
+#content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
+  color: #f3e8ff !important;
+}
+
+h2, h3, h4, .wiki h1, .wiki h2, .wiki h3 {
+  color: #f3e8ff !important;
+  border-bottom-color: #6b3d7a !important;
+}
+
+h4 {
+  border-bottom-color: #6b3d7a !important;
+}
+
+.wiki h1, .wiki h2, .wiki h3 {
+  color: #f3e8ff !important;
+}
+
+.wiki h6 {
+  color: #a78bfa !important;
+}
+
+/* ===== テーブル ===== */
+table.list, .table-list {
+  border-top-color: #6b3d7a !important;
+  border-bottom-color: #6b3d7a !important;
+  background-color: #2d1b3d !important;
+}
+
+table.list th, .table-list-header {
+  background-color: #3d2a4d !important;
+  color: #f3e8ff !important;
+  border-bottom-color: #6b3d7a !important;
+}
+
+table.list td {
+  border-top-color: #4a2d5a !important;
+  color: #e0e0e0 !important;
+}
+
+table.list:not(.odd-even) tbody tr:nth-child(odd),
+.odd,
+#issue-changesets div.changeset:nth-child(odd) {
+  background-color: #2d1b3d !important;
+}
+
+table.list:not(.odd-even) tbody tr:nth-child(even),
+.even,
+#issue-changesets div.changeset:nth-child(even) {
+  background-color: #251b2d !important;
+}
+
+table.list:not(.odd-even) tbody tr:nth-child(odd):hover,
+.odd:hover,
+#issue-changesets div.changeset:nth-child(odd):hover,
+table.list:not(.odd-even) tbody tr:nth-child(even):hover,
+.even:hover,
+#issue-changesets div.changeset:nth-child(even):hover {
+  background-color: #4a2d5a !important;
+}
+
+tr.group td {
+  background-color: #2d1b3d !important;
+  border-bottom-color: #6b3d7a !important;
+  color: #e0e0e0 !important;
+}
+
+tr.group span.totals {
+  color: #a78bfa !important;
+}
+
+tr.group span.totals .value {
+  color: #c4b5fd !important;
+}
+
+tr.group a.toggle-all {
+  color: #a78bfa !important;
+}
+
+tr.project.closed, tr.project.archived {
+  color: #888 !important;
+}
+
+tr.project.closed a, tr.project.archived a {
+  color: #888 !important;
+}
+
+tr.user.locked, tr.user.registered {
+  color: #888 !important;
+}
+
+tr.user.locked a, tr.user.registered a {
+  color: #888 !important;
+}
+
+tr.version.closed, tr.version.closed a {
+  color: #888 !important;
+}
+
+tr.overdue:not(.context-menu-selection) td.due_date {
+  color: #ff6b6b !important;
+}
+
+table.issue-report tr.total,
+table.issue-report-detailed tr.total {
+  border-top-color: #6b3d7a !important;
+}
+
+table#time-report tbody tr.subtotal {
+  color: #c4b5fd !important;
+}
+
+table#time-report tbody tr.subtotal td.hours {
+  color: #a78bfa !important;
+}
+
+table#time-report tbody tr.total {
+  background-color: #3d2a4d !important;
+  border-top-color: #6b3d7a !important;
+}
+
+/* ===== ボックス ===== */
+.box {
+  background-color: #2d1b3d !important;
+  color: #e0e0e0 !important;
+  border: 1px solid #4a2d5a !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* ===== フォーム要素 ===== */
+input, select, textarea, button {
+  background-color: #2d1b3d !important;
+  color: #e0e0e0 !important;
+  border: 1px solid #6b3d7a !important;
+}
+
+input[type="text"]:focus,
+input[type="text"]:active,
+input[type="password"]:focus,
+input[type="password"]:active,
+input[type="date"]:focus,
+input[type="date"]:active,
+input[type="number"]:focus,
+input[type="number"]:active,
+select:focus,
+select:active,
+textarea:focus,
+textarea:active {
+  border-color: #a78bfa !important;
+  background-color: #3d2a4d !important;
+}
+
+input[type="submit"],
+button[type="submit"] {
+  background-color: #5a3d6a !important;
+  color: #f3e8ff !important;
+  border: 1px solid #6b3d7a !important;
+}
+
+input[type="submit"]:hover,
+button[type="submit"]:hover {
+  background-color: #6b3d7a !important;
+}
+
+input:disabled, select:disabled, textarea:disabled {
+  background-color: #251b2d !important;
+  color: #666 !important;
+  border-color: #4a2d5a !important;
+}
+
+fieldset {
+  border-color: #6b3d7a !important;
+}
+
+legend {
+  color: #f3e8ff !important;
+}
+
+/* ===== ログインフォーム ===== */
+#login-form {
+  background-color: #2d1b3d !important;
+  border: 1px solid #6b3d7a !important;
+  color: #e0e0e0 !important;
+}
+
+#login-form label {
+  color: #f3e8ff !important;
+}
+
+#login-form input[type="text"],
+#login-form input[type="password"] {
+  background-color: #1a1625 !important;
+  color: #e0e0e0 !important;
+  border: 1px solid #6b3d7a !important;
+}
+
+#login-form a.lost_password {
+  color: #a78bfa !important;
+}
+
+/* ===== モーダル ===== */
+div.modal {
+  background: #2d1b3d !important;
+  border: 1px solid #6b3d7a !important;
+  color: #e0e0e0 !important;
+}
+
+div.modal .box {
+  background-color: #2d1b3d !important;
+  color: #e0e0e0 !important;
+}
+
+/* ===== ドロップダウン ===== */
+.drdn-content {
+  background-color: #2d1b3d !important;
+  border-color: #6b3d7a !important;
+  color: #e0e0e0 !important;
+}
+
+.drdn-content .autocomplete {
+  background-color: #1a1625 !important;
+  color: #e0e0e0 !important;
+  border-color: #6b3d7a !important;
+}
+
+.drdn-content .autocomplete:focus {
+  border-color: #a78bfa !important;
+}
+
+.drdn-items > * {
+  border-color: #2d1b3d !important;
+  color: #e0e0e0 !important;
+}
+
+.drdn-items > a:hover {
+  background-color: #4a2d5a !important;
+  color: #f3e8ff !important;
+}
+
+.drdn-items > span {
+  color: #a78bfa !important;
+}
+
+#project-jump .drdn-trigger {
+  background-color: #2d1b3d !important;
+  color: #e0e0e0 !important;
+  border-color: #6b3d7a !important;
+}
+
+#project-jump .drdn-items > * {
+  color: #e0e0e0 !important;
+}
+
+#project-jump .drdn-items > a:hover {
+  background-color: #4a2d5a !important;
+  color: #f3e8ff !important;
+}
+
+.journal-header {
+  background-color: #4a2d5a !important;
+  color: #f3e8ff !important;
+  border-color: #6b3d7a !important;
+  border-radius: 3px !important;
+}
+
+.contextual .drdn-items > a:hover,
+.journal-actions .drdn-items > a:hover {
+  background-color: #4a2d5a !important;
+  border-color: #6b3d7a !important;
+  color: #f3e8ff !important;
+}
+
+/* ===== イシュー ===== */
+div.issue {
+  background: #3d2a4d !important;
+  border: 1px solid #6b3d7a !important;
+  color: #e0e0e0 !important;
+}
+
+div.issue div.subject p {
+  color: #c4b5fd !important;
+}
+
+div.issue .next-prev-links {
+  color: #a78bfa !important;
+}
+
+div.issue.overdue .due-date .value {
+  color: #ff6b6b !important;
+}
+
+div#sticky-issue-header {
+  background-color: #2d1b3d !important;
+  border-bottom-color: #6b3d7a !important;
+  color: #e0e0e0 !important;
+}
+
+/* ===== アクティビティ ===== */
+div#activity dl {
+  color: #e0e0e0 !important;
+}
+
+div#activity dt .time {
+  color: #c4b5fd !important;
+}
+
+div#activity dd .description,
+#search-results dd .description {
+  color: #c4b5fd !important;
+}
+
+div#activity dd span.description,
+#search-results dd span.description {
+  color: #a78bfa !important;
+}
+
+div#activity h3 {
+  background-color: #3d2a4d !important;
+  color: #f3e8ff !important;
+}
+
+div#activity dt {
+  border-top-color: #6b3d7a !important;
+}
+
+div#issue-changesets {
+  background: #2d1b3d !important;
+  color: #e0e0e0 !important;
+}
+
+div#issue-changesets div.changeset {
+  border-bottom-color: #6b3d7a !important;
+}
+
+/* ===== 検索結果 ===== */
+#search-results dd {
+  color: #e0e0e0 !important;
+}
+
+/* ===== ロードマップ ===== */
+div#version-summary {
+  background-color: #2d1b3d !important;
+  border: 1px solid #6b3d7a !important;
+  color: #e0e0e0 !important;
+}
+
+div#version-summary fieldset {
+  border-color: #6b3d7a !important;
+}
+
+/* ===== Wiki ===== */
+div.wiki {
+  color: #e0e0e0 !important;
+}
+
+div.wiki a.wiki-page.new,
+div.wiki a.wiki-page.new:link,
+div.wiki a.wiki-page.new:visited,
+div.wiki a.new,
+div.wiki a.new:link,
+div.wiki a.new:visited {
+  color: var(--oc-red-9) !important;
+}
+
+div.wiki a.wiki-page.new:hover,
+div.wiki a.wiki-page.new:active,
+div.wiki a.new:hover,
+div.wiki a.new:active {
+  color: var(--oc-red-9) !important;
+}
+
+div.wiki table {
+  border-color: #6b3d7a !important;
+}
+div.wiki table th,
+div.wiki table td {
+  border-color: #6b3d7a !important;
+  color: #e0e0e0 !important;
+}
+div.wiki table td {
+  background-color: #2d1b3d !important;
+}
+div.wiki table thead th {
+  background-color: #FFA500 !important;
+  color: #f3e8ff !important;
+  font-weight: bold !important;
+}
+div.wiki th[role=columnheader]:not(.no-sort):after {
+  border-color: #f3e8ff transparent !important;
+}
+
+div.wiki a:target + h1,
+div.wiki a:target + h2,
+div.wiki a:target + h3,
+div.wiki a:target + h4,
+div.wiki a:target + h5,
+div.wiki a:target + h6 {
+  background-color: #4a2d5a !important;
+}
+
+.wiki-update-info {
+  color: #a78bfa !important;
+}
+
+/* ===== プロジェクト ===== */
+#projects-index li.root {
+  background-color: #2d1b3d !important;
+  border-color: #6b3d7a !important;
+  color: #e0e0e0 !important;
+}
+
+#projects-index li.root ul.projects {
+  border-left-color: #6b3d7a !important;
+}
+
+ul.projects li.root div.archived,
+ul.projects li.child div.archived {
+  color: #888 !important;
+}
+
+/* ===== その他の要素 ===== */
+hr {
+  background: #6b3d7a !important;
+}
+
+blockquote {
+  border-left-color: #6b3d7a !important;
+  color: #c4b5fd !important;
+}
+
+abbr, span.field-description[title] {
+  border-bottom-color: #7a4d8a !important;
+}
+
+.highlight {
+  background-color: #4a2d5a !important;
+  color: #e0e0e0 !important;
+}
+
+.highlight.token-1 {
+  background-color: #5a3d4a !important;
+}
+
+.highlight.token-2 {
+  background-color: #3d5a4a !important;
+}
+
+.highlight.token-3 {
+  background-color: #3d4a5a !important;
+}
+
+.contextual {
+  color: #e0e0e0 !important;
+}
+
+p.breadcrumb {
+  color: #c4b5fd !important;
+}
+
+p.subtitle {
+  color: #a78bfa !important;
+}
+
+/* ===== 優先度による色分け（イシュー） ===== */
+tr.odd.priority-highest,
+tr.even.priority-highest {
+  background: #5a2a3a !important;
+  color: #ff9999 !important;
+}
+
+tr.odd.priority-highest td,
+tr.even.priority-highest td {
+  border-color: #6a3a4a !important;
+}
+
+tr.odd.priority-high2,
+tr.even.priority-high2 {
+  background: #5a3d4a !important;
+  color: #ffaa99 !important;
+}
+
+tr.odd.priority-high3,
+tr.even.priority-high3 {
+  background: #4a3d4a !important;
+  color: #ffbb99 !important;
+}
+
+tr.odd.priority-lowest,
+tr.even.priority-lowest {
+  background: #2a3d5a !important;
+  color: #c4b5fd !important;
+}
+
+/* ===== バッジ ===== */
+.badge {
+  background-color: #5a3d6a !important;
+  color: #f3e8ff !important;
+}
+
+/* ===== ページネーション ===== */
+.pagination a {
+  color: #a78bfa !important;
+}
+
+.pagination .current {
+  background-color: #5a3d6a !important;
+  color: #f3e8ff !important;
+  border-color: #6b3d7a !important;
+}
+
+/* ===== コードブロック ===== */
+pre, code {
+  background-color: #1a1625 !important;
+  color: #e0e0e0 !important;
+  border: 1px solid #4a2d5a !important;
+}
+
+/* ===== チェックボックスとラジオボタン ===== */
+input[type="checkbox"],
+input[type="radio"] {
+  background-color: #2d1b3d !important;
+  border-color: #6b3d7a !important;
+}
+
+/* ===== セレクトボックス ===== */
+select {
+  background-color: #2d1b3d !important;
+  color: #e0e0e0 !important;
+}
+
+select option {
+  background-color: #2d1b3d !important;
+  color: #e0e0e0 !important;
+}
+
+/* ===== テキストエリア ===== */
+textarea {
+  background-color: #2d1b3d !important;
+  color: #e0e0e0 !important;
+  border-color: #6b3d7a !important;
+}
+
+textarea:focus {
+  background-color: #3d2a4d !important;
+  border-color: #a78bfa !important;
+}
+
+/* ===== エラーメッセージ ===== */
+.errorExplanation {
+  background-color: #5a2a3a !important;
+  border-color: #6a3a4a !important;
+  color: #ff9999 !important;
+}
+
+.tabular label.error {
+  color: #ff6b6b !important;
+}
+
+.tabular label.error + * {
+  border-color: #ff6b6b !important;
+}
+
+/* ===== 通知 ===== */
+.flash {
+  background-color: #3a4a2a !important;
+  border-color: #4a5a3a !important;
+  color: #e0e0e0 !important;
+}
+
+.flash.error {
+  background-color: #5a2a3a !important;
+  border-color: #6a3a4a !important;
+  color: #ff9999 !important;
+}
+
+.flash.notice {
+  background-color: #2a4a3a !important;
+  border-color: #3a5a4a !important;
+  color: #99ff99 !important;
+}
+
+/* ===== Wiki Preview (jstoolbar.css) ===== */
+.wiki-preview {
+  background-color: #2d1b3d !important;
+  border: 1px solid #6b3d7a !important;
+  color: #e0e0e0 !important;
+}
+
+.wiki-preview p.empty-preview {
+  color: #a78bfa !important;
+}
+
+.wiki-preview * {
+  color: #e0e0e0 !important;
+}
+
+.wiki-preview a,
+.wiki-preview a:link,
+.wiki-preview a:visited {
+  color: #a78bfa !important;
+}
+
+.wiki-preview a.wiki-page.new,
+.wiki-preview a.wiki-page.new:link,
+.wiki-preview a.wiki-page.new:visited,
+.wiki-preview a.new,
+.wiki-preview a.new:link,
+.wiki-preview a.new:visited {
+  color: var(--oc-red-9) !important;
+}
+
+.wiki-preview a:hover,
+.wiki-preview a:active {
+  color: #c4b5fd !important;
+}
+
+.wiki-preview a.wiki-page.new:hover,
+.wiki-preview a.wiki-page.new:active,
+.wiki-preview a.new:hover,
+.wiki-preview a.new:active {
+  color: var(--oc-red-9) !important;
+}
+
+.wiki-preview h1,
+.wiki-preview h2,
+.wiki-preview h3,
+.wiki-preview h4,
+.wiki-preview h5,
+.wiki-preview h6 {
+  color: #f3e8ff !important;
+}
+
+.wiki-preview code {
+  background-color: #1a1625 !important;
+  color: #e0e0e0 !important;
+  border: 1px solid #4a2d5a !important;
+}
+
+.wiki-preview pre {
+  background-color: #1a1625 !important;
+  color: #e0e0e0 !important;
+  border: 1px solid #4a2d5a !important;
+}
+
+.wiki-preview blockquote {
+  border-left-color: #6b3d7a !important;
+  color: #c4b5fd !important;
+}
+
+.wiki-preview table {
+  border-color: #6b3d7a !important;
+}
+
+.wiki-preview table th,
+.wiki-preview table td {
+  border-color: #6b3d7a !important;
+  background-color: #2d1b3d !important;
+  color: #e0e0e0 !important;
+}
+
+.wiki-preview table th {
+  background-color: #3d2a4d !important;
+}
+
+.wiki-preview ul.toc {
+  background-color: #3d2a4d !important;
+  border-color: #6b3d7a !important;
+  color: #e0e0e0 !important;
+}
+
+.wiki-preview ul.toc a {
+  color: #c4b5fd !important;
+}
+
+.wiki-preview ul.toc a:hover {
+  color: #a78bfa !important;
+}
+
+/* ===== JSToolbar ボタン ===== */
+.jstElements button {
+  background-color: #5a3d6a !important;
+  border-color: #6b3d7a !important;
+  color: #f3e8ff !important;
+}
+
+.jstElements button:hover {
+  background-color: #6b3d7a !important;
+  border-color: #7a4d8a !important;
+}
+
+.jstb_pre::before {
+  color: #f3e8ff !important;
+}
+
+/* ===== テーブルジェネレータ ===== */
+.table-generator {
+  background-color: #2d1b3d !important;
+  border-color: #6b3d7a !important;
+}
+
+.table-generator td {
+  background-color: #2d1b3d !important;
+  border-color: #6b3d7a !important;
+  color: #e0e0e0 !important;
+}
+
+.table-generator td.selected-cell,
+.table-generator td:hover {
+  background-color: #5a3d6a !important;
+  color: #f3e8ff !important;
+}
+
+/* ===== JSToolbar タブ (tab-edit, tab-preview) ===== */
+#content .jstTabs.tabs ul {
+  border-bottom-color: #6b3d7a !important;
+}
+
+#content .jstTabs.tabs li a,
+a.tab-edit,
+a.tab-preview {
+  background-color: #2d1b3d !important;
+  border-color: #6b3d7a !important;
+  color: #c4b5fd !important;
+}
+
+#content .jstTabs.tabs li a:hover,
+a.tab-edit:hover,
+a.tab-preview:hover {
+  background-color: #4a2d5a !important;
+  color: #f3e8ff !important;
+}
+
+#content .jstTabs.tabs li a.selected,
+a.tab-edit.selected,
+a.tab-preview.selected {
+  background-color: #2d1b3d !important;
+  border-color: #6b3d7a !important;
+  border-bottom-color: #2d1b3d !important;
+  color: #f3e8ff !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+}
+
+#content .jstTabs.tabs li a.selected:hover,
+a.tab-edit.selected:hover,
+a.tab-preview.selected:hover {
+  background-color: #2d1b3d !important;
+  color: #f3e8ff !important;
+}
+
+.syntaxhl .s {
+  background-color: #684747 !important;
+}
+
+.syntaxhl .s1 {
+  background-color: #684747 !important;
+}
+
+.syntaxhl .s2 {
+  background-color: #684747 !important;
+}
+
+.syntaxhl .si {
+  background-color: #68475a !important;
+}
+
+.syntaxhl .mi {
+  color: #b1b1f2 !important;
+}
+
+.syntaxhl .err {
+  background-color: #1a1625  !important;
+}
+
